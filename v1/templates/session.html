@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+	    <meta http-equiv="x-ua-compatible" content="ie=edge">
+	    <title>Smart Marketing - Session</title>
+	    <meta name="description" content="">
+	    <meta name="viewport" content="width=device-width, initial-scale=1">
+		<link href="../static/css/bootstrap.min.css" rel="stylesheet">
+		<link href="../static/css/sessionstyle.css" rel="stylesheet">
+		<!-- <script src="https://use.fontawesome.com/63432f6aa8.js"></script> -->
+		<link href="https://fonts.googleapis.com/css2?family=Tenali+Ramakrishna&display=swap" rel="stylesheet">
+		<link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	</head>
+
+	<body>
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-md-6">
+					<div class="form">
+						<div class="logo-header">
+							<a class="nav-link" href="{{ url_for('home') }}">
+								<img src="../static/src/sessionhead.svg">
+							</a>
+						</div>
+						<form class="rec-form" method="post" action="http://localhost:3000/client/session">
+							<div class="name-input">
+								<label>Business Name</label><br>
+								<input type="text" name="name" required="required" autocomplete="off"><br>
+							</div>
+
+							<div class="industry-input">
+								<label for="Industry">Industry</label><br>
+								<select id="opt-industries" name="industries" required="required">
+									<option class="disabled">--Select--</option>
+									<option class="Transportation" value="Transportation">Transportation</option>
+									<option class="Information-Communication-Technology" value="Information Communication Technology">Information Communication Technology</option>
+									<option class="Artificial-Intelligence" value="Artificial Intelligence">Artificial Intelligence</option>
+									<option class="Agriculture" value="Agriculture">Agriculture</option>
+									<option class="Construction" value="Construction">Construction</option>
+									<option class="Education" value="Education">Education</option>
+									<option class="Health" value="Health">Health</option>
+									<option class="Food" value="Food">Food</option>
+									<option class="Hospitality" value="Hospitality">Hospitality</option>
+									<option class="Entertainment" value="Entertainment">Entertainment</option>
+									<option class="News-Media" value="News Media">News Media</option>
+									<option class="Energy" value="Energy">Energy</option>
+									<option class="Electronics" value="Electronics">Electronics</option>
+									<option class="Manufacturing" value="Manufacturing">Manufacturing</option>
+									<option class="Social-science" value="Social science">Social science</option>
+									<option class="Finance" value="Finance">Finance</option>
+									<option class="Trade" value="Trade">Trade</option>
+									<option class="Fashion" value="Fashion">Fashion</option>
+								</select><br>
+							</div>
+
+							<div class="service-input">
+								<label for="Services"> Services</label><br>
+								<select id="opt-services" name="services" required="required">
+									<option class="disabled">--Select--</option>
+									<!-- Transportation -->
+									<option class="Transportation" value="Delivery and Logistics">Delivery and Logistics</option>
+									<option class="Transportation" value="Haulage Services">Haulage Services</option>
+									<option class="Transportation" value="Aerospace">Aerospace</option>
+									<option class="Transportation" value="Local Transportation">Local Transportation</option>
+									<option class="Transportation" value="Speed boats Yachts Cruise Ships">Speed boats Yachts Cruise Ships</option>
+									<!-- Information-Communication-Technology -->
+									<option class="Information-Communication-Technology" value="Mobile software development">Mobile software development</option>
+									<option class="Information-Communication-Technology" value="Social media services">Social media services</option>
+									<option class="Information-Communication-Technology" value="Cloud Services">Cloud Services</option>
+									<option class="Information-Communication-Technology" value="Computer System">Computer System</option>
+									<option class="Information-Communication-Technology" value="Prototyping and design">Prototyping and design</option>
+									<option class="Information-Communication-Technology" value="Application Development">Application Development</option>
+									<option class="Information-Communication-Technology" value="Web Application Development">Web Application Development</option>
+									<option class="Information-Communication-Technology" value="Mobile phones">Mobile phones</option>
+									<option class="Information-Communication-Technology" value="Network services">Network services</option>
+									<option class="Information-Communication-Technology" value="Information Security">Information Security</option>
+									<!-- Artificial-Intelligence -->
+									<option class="Artificial-Intelligence" value="Artificial neural network">Artificial neural network</option>
+									<option class="Artificial-Intelligence" value="Robotics">Robotics</option>
+									<option class="Artificial-Intelligence" value="Expert systems">Expert systems</option>
+									<option class="Artificial-Intelligence" value="Embedded systems">Embedded systems</option>
+									<option class="Artificial-Intelligence" value="Machine learning">Machine learning</option>
+									<option class="Artificial-Intelligence" value="VR and AR">VR and AR</option>
+									<option class="Artificial-Intelligence" value="Data science">Data science</option>
+									<option class="Artificial-Intelligence" value="Internet of things">Internet of things</option>
+									<option class="Artificial-Intelligence" value="Big data engineering">Big data engineering</option>
+									<option class="Artficial-Intelligence" value="Virtual assistant">Virtual assistant</option>
+									<!-- Agriculture -->
+									<option class="Agriculture" value="Aquaponics">Aquaponics</option>
+									<option class="Agriculture" value="Livestock farming">Livestock farming</option>
+									<option class="Agriculture" value="Fertilizer">Fertilizer</option>
+									<option class="Agriculture" value="Horticulture">Horticulture</option>
+									<option class="Agriculture" value="Poultry">Poultry</option>
+									<option class="Agriculture" value="Agronomy">Agronomy</option>
+									<option class="Agriculture" value="Aquafarming">Aquafarming</option>
+									<option class="Agriculture" value="Husbandry">Husbandry</option>
+									<option class="Agriculture" value="Fishing">Fishing</option>
+									<option class="Agriculture" value="Vertical farming">Vertical farming</option>
+
+									<!-- Construction -->
+									<option class="Construction" value="Carpentry">Carpentry</option>
+									<option class="Construction" value="3D printing">3D printing</option>
+									<option class="Construction" value="Building technology">Building technology</option>
+									<option class="Construction" value="Structural engineering">Structural engineering</option>
+									<option class="Construction" value="Building contractor">Building contractor</option>
+									<option class="Construction" value="Civil engineering">Civil engineering</option>
+									<option class="Construction" value="Architect">Architect</option>
+									<option class="Construction" value="Real Estate">Real Estate</option>
+									<!-- Education -->
+									<option class="Education" value="Library">Library</option>
+									<option class="Education" value="Consultancy services">Consultancy services</option>
+									<option class="Education" value="Specialized research">Specialized research</option>
+									<option class="Education" value="Primary education">Primary education</option>
+									<option class="Education" value="Aviation school">Aviation school</option>
+									<option class="Education" value="Training services">Training services</option>
+									<option class="Education" value="Online learning">Online learning</option>
+									<option class="Education" value="University">University</option>
+									<option class="Education" value="Secondary education">Secondary education</option>
+									<!-- Health -->
+									<option class="Health" value="Fitness services">Fitness services</option>
+									<option class="Health" value="Psychiatric hospital">Psychiatric hospital</option>
+									<option class="Health" value="Pharmacy">Pharmacy</option>
+									<option class="Health" value="Hospital">Hospital</option>
+									<option class="Health" value="Veterinary services">Veterinary services</option>
+									<option class="Health" value="Specialist hospital">Specialist hospital</option>
+									<option class="Health" value="Therapist">Therapist</option>
+									<!-- Food -->
+									<option class="Food" value="Fast foods">Fast foods</option>
+									<option class="Food" value="Beverages">Beverages</option>
+									<option class="Food" value="Confectionaries">Confectionaries</option>
+									<option class="Food" value="Resturant">Resturant</option>
+									<option class="Food" value="Pastries">Pastries</option>
+									<option class="Food" value="Catering services">Catering services</option>
+									<!-- Hospitality -->
+									<option class="Hospitality" value="Hotel services">Hotel services</option>
+									<option class="Hospitality" value="Tourism services">Tourism services</option>
+									<option class="Hospitality" value="Recreational services">Recreational services</option>
+									<option class="Hospitality" value="Resorts">Resorts</option>
+									<option class="Hospitality" value="Event planning services">Event planning services</option>
+									<!-- Entertainment -->
+									<option class="Entertainment" value="Music">Music</option>
+									<option class="Entertainment" value="Magazines">Magazines</option>
+									<option class="Entertainment" value="Arts">Arts</option>
+									<option class="Entertainment" value="Comedy">Comedy</option>
+									<option class="Entertainment" value="Movies">Movies</option>
+									<option class="Entertainment" value="Sports">Sports</option>
+									<!-- News-Media -->
+									<option class="News-Media" value="Newspaper">Newspaper</option>
+									<option class="News-Media" value="Press">Press</option>
+									<option class="News-Media" value="Radio broadcast">Radio broadcast</option>
+									<option class="News-Media" value="Online media service">Online media service</option>
+									<!-- Energy -->
+									<option class="Energy" value="Solar services">Solar services</option>
+									<option class="Energy" value="Petroleum">Petroleum</option>
+									<option class="Energy" value="Renewable energy">Renewable energy</option>
+									<option class="Energy" value="Power utility services">Power utility services</option>
+									<option class="Energy" value="Inverters">Inverters</option>
+									<!-- Electronics -->
+									<option class="Electronics" value="Industrial equipments">Industrial equipments</option>
+									<option class="Electronics" value="Communication equipments">Communication equipments</option>
+									<option class="Electronics" value="Medical devices">Medical devices</option>
+									<option class="Electronics" value="Consumer electronics">Consumer electronics</option>
+									<option class="Electronics" value="Semiconductor supplies">Semiconductor supplies</option>
+									<option class="Electronics" value="Office products">Office products</option>
+									<!-- Manufacturing -->
+									<option class="Manufacturing" value="Research and development">Research and development</option>
+									<option class="Manufacturing" value="Engineering">Engineering</option>
+									<option class="Manufacturing" value="Food processing">Food processing</option>
+									<option class="Manufacturing" value="Textile">Textile</option>
+									<option class="Manufacturing" value="Metallurgical services">Metallurgical services</option>
+									<!-- Social-science -->
+									<option class="Social-science" value="Culture">Culture</option>
+									<option class="Social-science" value="Law">Law</option>
+									<option class="Social-science" value="Economics">Economics</option>
+									<option class="Social-science" value="Philosophy">Philosophy</option>
+									<option class="Social-science" value="Geography">Geography</option>
+									<!-- Finance -->
+									<option class="Finance" value="Bank">Bank</option>
+									<option class="Finance" value="Insurance">Insurance</option>
+									<option class="Finance" value="Investment">Investment</option>
+									<option class="Finance" value="Brokerage services">Brokerage services</option>
+									<option class="Finance" value="Foreign exchange services">Foreign exchange services</option>
+									<option class="Finance" value="Mortgage">Mortgage</option>
+									<option class="Finance" value="Accounting services">Accounting services</option>
+									<option class="Finance" value="Pension services">Pension services</option>
+									<!-- Trade -->
+									<option class="Trade" value="Publishing services">Publishing services</option>
+									<option class="Trade" value="Local distribution">Local distribution</option>
+									<option class="Trade" value="General Retailing services">General Retailing services</option>
+									<option class="Trade" value="Wholesale services">Wholesale services</option>
+									<option class="Trade" value="Foreign distribution">Foreign distribution</option>
+									<option class="Trade" value="Marketing">Marketing</option>
+									<!-- Fashion -->
+									<option class="Fashion" value="Luxury fashion services">Luxury fashion services</option>
+									<option class="Fashion" value="Fashion designer">Fashion designer</option>
+									<option class="Fashion" value="Dress making services">Dress making services</option>
+									<option class="Fashion" value="Fashion retail">Fashion retail</option>
+									<option class="Fashion" value="Fashion stylist">Fashion stylist</option>
+									<option class="Fashion" value="Beauty">Beauty</option>
+									<option class="Fashion" value="Fashion merchandising">Fashion merchandising</option>
+								</select><br>
+							</div>
+
+							<br><input type="submit" value="Submit">
+						</form>
+					</div>
+				</div>
+				<div class="col-md-6">
+					<div class="img-thumbnail">
+						<div class="text">
+							<img class="img-fluid" src="../static/src/thumb.jpg">
+							<h4>We aim to change the way businesses market their brands.</h4>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<footer>
+			<div class="footer-copyright footer-f text-center py-0">© 2020 Copyright<a href="#header"> OLAWUYI </a>
+		  	</div>
+		</footer>
+
+		<script type="text/javascript" src="../static/js/jquery.js"></script>
+		<script src= "../static/js/sescript.js"></script>
+
+		<script type="text/javascript">
+			$(function(){
+			    $("#opt-industries").on("change",function(){
+			        var levelClass = $('#opt-industries').find('option:selected').attr('class');
+			        $('#opt-services option').each(function () {
+			            var self = $(this);
+			            if (self.hasClass(levelClass) || typeof(levelClass) == "undefined") {
+			                self.show();
+			            } else {
+			                self.hide();
+			            }
+			        });
+			    });
+			});
+		</script>
+	</body>
+</html>

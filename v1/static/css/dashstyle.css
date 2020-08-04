@@ -1,0 +1,556 @@
+body{
+    width: -webkit-fill-available;
+    height: -webkit-fill-available;
+    font-family: 'Tenali Ramakrishna', sans-serif;
+    background: #111111;
+    color: #DBC7B5;
+}
+.side-nav{
+	position: absolute;
+	width: 70px;
+	height: 100%;
+	left: 0px;
+	top: 0px;
+
+	background: #202020;
+}
+.side-nav .nav{
+	margin-left: 10px;
+}
+.side-nav .nav-item{
+	width: 50px;
+	height: 50px;
+	margin: 20px 0px;
+	/*border: 1px solid white;*/
+}
+a{
+	color: inherit;
+}
+a:hover{
+	text-decoration: none;
+	color: inherit;
+}
+.side-nav .nav-item a i{
+	font-size: 30px;
+	position: relative;
+	left: 8.5px;
+}
+.side-nav .nav-item a i:hover{
+	color: rgba(219,199,181,0.3);
+	transition: .5s;
+}
+.side-nav .bottom-left-nav{
+	position: absolute;
+	bottom: 0px;
+}
+.link{
+	position: absolute;
+	left: 15px;
+}
+.link img{
+	width: 40px;
+	height: 35px;
+}
+.mid-nav{
+	padding-top: 30px;
+}
+.heat{
+	/*margin: 1rem;*/
+	width: 708px;
+	height: 90%;
+	position: absolute;
+	top: 0px;
+	left: 100px;
+}
+
+.heat .header{
+	position: relative;
+	width: 500px;
+	height: 70px;
+	top: 10px;
+    left: 10px;
+}
+.heat .header #user{
+	font-size: 50px;
+	position: relative;
+    left: 5px;
+    top: 5px;
+}
+/*.heat .header #value{
+	text-transform: uppercase;
+	letter-spacing: 0.2em;
+}*/
+.heat .header h3{
+	text-transform: uppercase;
+	letter-spacing: 0.2em;
+	position: absolute;
+	top: 25px;
+	left: 60px;
+}
+
+.heat .session-redirect{
+	width: 708px;
+    height: 50px;
+    border-radius: 30px;
+    background: #202020;
+    position: relative;
+    top: 10px;
+    left: 10px;
+}
+.heat .session-redirect i{
+	position: absolute;
+	font-size: 28px;
+    top: 10px;
+    left: 650px;
+}
+.heat .session-redirect h5{
+	position: absolute;
+    font-size: 24px;
+    top: 15px;
+    left: 20px;
+}
+.heat .chart{
+	width: 708px;
+    height: 200px;
+    border-radius: 30px;
+    background: #202020;
+    position: relative;
+    top: 25px;
+    left: 10px;
+}
+
+/*Canvas Embed*/
+.heat .chart canvas{}
+
+.heat .results{
+	width: 708px;
+    height: 250px;
+    position: relative;
+    top: 27px;
+    left: 10px;
+}
+/*.heat .results .res-cards{}
+.heat .results .row .col-md-6{}*/
+.heat .results .row .col-md-6 h5{
+	font-size: 12px;
+	font-weight: 600;
+	letter-spacing: 0.1em;
+	text-transform: uppercase;
+	position: relative;
+	width: 250px;
+	left: 20px;
+	top: 10px;
+}
+.heat .results .row .col-md-6 p{
+	font-size: 12px;
+	font-weight: 500;
+	letter-spacing: 0.1em;
+	position: relative;
+	width: 250px;
+	left: 20px;
+	top: 6px;
+}
+.heat .results .row .col-md-6 .rcard i{
+	font-size: 28px;
+    position: absolute;
+    top: 90px;
+    left: 275px;
+}
+.heat .results .row .col-md-6 img{
+	width: 32px;
+	height: 32px;
+	position: absolute;
+    top: 87px;
+    left: 275px;
+}
+
+/*RES-CARDS*/
+
+.heat .results .row .pinterest{
+	color: #DBC7B5;
+	background: #BD081C;
+}
+.heat .results .row .twitter{
+	color: #000000;
+	background: #00ACEE;
+}
+.heat .results .row .instagram{
+	color: #FFFFFF;
+	background: linear-gradient(-90deg, #515BD4, #F58529);
+}
+
+.heat .results .row .linkedin{
+	color: #DBC7B5;
+	background: #0E76A8;
+}
+.heat .results .row .facebook{
+	color: #DBC7B5;
+	background: #3B5998;
+}
+.heat .results .row .snapchat{
+	color: #000000;
+	background: #FFFC00;
+}
+
+.heat .results .row .apple{
+	color: #000000;
+	background: #DADADA;
+}
+.heat .results .row .google{
+	background: #202020;
+	color: #DBC7B5;
+}
+
+.heat .results .row .youtube{
+	color: #DBC7B5;
+	background: #FF0000;
+}
+.heat .results .row .tumblr{
+	color: #DBC7B5;
+	background: #34526F;
+}
+.heat .results .row .tiktok{
+	color: #DBC7B5;
+	background: #010101;
+}
+
+.heat .results .row .medium{
+	color: #DBC7B5;
+	background: #000000;
+}
+.heat .results .row .spotify{
+	color: #000000;
+	background: #1ED760;
+}
+.heat .results .row .behance{
+	color: #DBC7B5;
+	background: #0077D6;
+}
+
+.heat .results .row .github{
+	color: #DBC7B5;
+	background: #211F1F;
+}
+.heat .results .row .researchgate{
+	color: #000000;
+	background: #1BC38D;
+	font-weight: bold;
+}
+.heat .results .row .reddit{
+	color: #DBC7B5;
+	background: #FF4500;
+}
+
+.heat .results .row .col-md-6 .rcard{
+	width: 300px;
+	height: 120px;
+	border-radius: 30px;
+	margin: 0.7rem;
+}
+
+/*Right*/
+.right{
+	position: absolute;
+	width: 425px;
+	height: 620px;
+	border-radius: 30px;
+	background: #202020;
+	left: 880px;
+	top: 20px;
+}
+.right .right-box{
+	margin: 1rem;
+}
+.right .tools{
+	width: 360px;
+	position: relative;
+	left: 15px;
+}
+.right .tools .request-form{
+	border-radius: 30px;
+    background: #111111;
+    width: 330px;
+    height: 65px;
+    position: absolute;
+    left: 20px;
+}
+.right .tools .request-form label{
+	/*font-size: 18px;*/
+	letter-spacing: 0.1em;
+	position: relative;
+	top: 3.5px;
+    left: 25px;
+}
+.right .tools .request-form input[type="text"]{
+	width: 240px;
+	height: 30px;
+	border-radius: 30px;
+	background: #202020;
+	border: none;
+	color: #DBC7B5;
+	padding-left: 15px;
+}
+.right .tools .request-form input[type="submit"]{
+	background: inherit;
+	border-radius: 15px;
+	border: none;
+	color: #DBC7B5;
+	position: absolute;
+	left: 240px;
+	top: 5px;
+}
+.right .tools .request-form form{
+	position: absolute;
+	left: 17.5px;
+    top: 22.5px;
+}
+.right .tools .request-form form i{
+	position: absolute;
+    top: 7.5px;
+    left: 280px;
+}
+.right .tools .stats{
+	border-radius: 30px;
+    background: #111111;
+    width: 330px;
+    height: 157.5px;
+    position: absolute;
+    left: 15px;
+    top: 75px;
+}
+.right .tools .stats label{
+	text-transform: uppercase;
+	font-size: 18px;
+	letter-spacing: 0.1em;
+	position: relative;
+	top: 3.5px;
+	left: 95px;
+}
+.right .tools .stats .stat-cards{
+	width: 300px;
+	height: 80px;
+	background: #202020;
+	border-radius: 30px;
+	position: absolute;
+	top: 30px;
+	left: 15px;
+	text-align: center;
+	padding: 0px 30px;
+}
+.right .tools .stats .stat-cards .col-md-4{
+	margin: 0px;
+	padding: 0px;
+}
+.right .tools .stats .stat-cards h5{
+	font-size: 32px;
+	position: absolute;
+	top: 10px;
+	left: 15px;
+}
+.plusve{
+	color: green;
+}
+.negave{
+	color: red;
+}
+.right .tools .stats .stat-cards i{
+	font-size: 15px;
+	font-weight: lighter;
+}
+.right .tools .stats .stat-cards p{
+	position: absolute;
+	top: 40px;
+	left: 5px;
+	width: 80px;
+	height: 20px;
+	text-align: center;
+	line-height: 12px;
+	font-size: 15px;
+}
+.right .tools .stats .stat-cards .scar{
+	text-align: center;
+	width: 70px;
+	height: 90px;
+}
+.right .tools .stats .stat-below{
+	position: relative;
+	top: 85px;
+    width: 280px;
+    left: 40px;
+}
+.right .tools .stats .col-md-6{
+	text-align: center;
+	font-size: 20px;
+	line-height: 12px;
+	padding: 0px;
+}
+.right .tools .stats .col-md-6 .pad{
+	padding: 0 10px;
+}
+.right .tools .stats .col-md-6 p{
+	margin: 0px;
+	padding: 0px;
+}
+.right .tools .adtools{
+	border-radius: 30px;
+    background: #111111;
+    width: 330px;
+    height: 350px;
+    position: absolute;
+    left: 20px;
+    top: 242.5px;
+}
+.right .tools .adtools .widget{
+	padding: 0.5em 0px;
+}
+.right .tools .adtools .buffer{
+	position: relative;
+	left: 15px;
+	top: 5px;
+	border-radius: 30px;
+    background: #202020;
+    width: 300px;
+    height: 70px;
+}
+.right .tools .adtools .buffer .widget-text{
+	position: absolute;
+	top: 10px;
+	left: 70px;
+}
+.right .tools .adtools .buffer img{
+	position: absolute;
+	top: 15px;
+	left: 20px;
+}
+
+.right .tools .adtools .analytics{
+	position: relative;
+	left: 15px;
+	border-radius: 30px;
+    background: #202020;
+    width: 300px;
+    height: 70px;
+}
+.right .tools .adtools .analytics .widget-text{
+	position: absolute;
+	top: 10px;
+	left: 70px;
+}
+.right .tools .adtools .analytics i{
+	position: absolute;
+	top: 20px;
+	left: 20px;
+}
+
+
+.right .tools .adtools .adsense{
+	position: relative;
+	left: 15px;
+	border-radius: 30px;
+    background: #202020;
+    width: 300px;
+    height: 70px;
+}
+.right .tools .adtools .adsense .widget-text{
+	position: absolute;
+	top: 10px;
+	left: 70px;
+}
+.right .tools .adtools .adsense img{
+	position: absolute;
+	top: 15px;
+	left: 20px;
+}
+
+
+.right .tools .adtools .notifications{
+	border-radius: 30px;
+    background: #202020;
+    width: 300px;
+    height: 80px;
+    position: relative;
+	left: 15px;
+}
+.right .tools .adtools .notifications i{
+	position: absolute;
+	top: 20px;
+	left: 20px;
+}
+.right .tools .adtools .notifications .notification-text{
+	width: 220px;
+	letter-spacing: 0.1em;
+	line-height: 15px;
+	position: absolute;
+	top: 10px;
+	left: 70px;
+}
+
+
+.right .tools .adtools .widget-text{
+	width: 220px;
+	line-height: 15px;
+}
+
+
+.right .tools .adtools img{
+	width: 30px;
+	height: 30px;
+}
+.right .tools .adtools i{
+	font-size: 30px;
+}
+.right .tools .adtools label{
+	text-transform: uppercase;
+	margin: 0px;
+}
+
+@keyframes shake {
+  0% { transform: translate(1px, 1px) rotate(0deg); }
+  10% { transform: translate(-1px, -2px) rotate(-1deg); }
+  20% { transform: translate(-3px, 0px) rotate(1deg); }
+  30% { transform: translate(3px, 2px) rotate(0deg); }
+  40% { transform: translate(1px, -1px) rotate(1deg); }
+  50% { transform: translate(-1px, 2px) rotate(-1deg); }
+  60% { transform: translate(-3px, 1px) rotate(0deg); }
+  70% { transform: translate(3px, 1px) rotate(-1deg); }
+  80% { transform: translate(-1px, -1px) rotate(1deg); }
+  90% { transform: translate(1px, 2px) rotate(0deg); }
+  100% { transform: translate(1px, -2px) rotate(-1deg); }
+}
+
+.heat .col-md-6:hover{
+	animation: shake 0.5s;
+}
+
+
+
+
+
+footer{
+	position: fixed;
+    margin: auto;
+    padding: auto;
+    font-size: 15px;
+    /*border: 1px solid beige;*/
+    bottom: 0;
+    right: 42.5%;
+}
+
+
+
+/*Social Media Tools*/
+/*facebook
+youtube
+twitter
+pinterest
+instagram
+medium
+linkedin
+reddit
+tumblr
+behance
+snapchat
+spotify
+github
+tiktok
+researchGate*/

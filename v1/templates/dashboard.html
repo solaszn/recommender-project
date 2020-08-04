@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+	    <meta http-equiv="x-ua-compatible" content="ie=edge">
+		<title>Smart Marketing - Dashboard</title>
+		<meta name="description" content="">
+	    <meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="../static/css/bootstrap.min.css">
+		<link rel="stylesheet" href="../static/css/dashstyle.css">
+		<link href="https://fonts.googleapis.com/css2?family=Tenali+Ramakrishna&display=swap" rel="stylesheet">
+		<link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+		<script type="text/javascript" src="../static/js/jquery.js"></script>
+
+		<script type="text/javascript">
+			window.onload = function () {
+
+			var chart = new CanvasJS.Chart("chartContainer", {
+				theme: "dark1", // "light2", "dark1", "dark2"
+				animationEnabled: true,
+				title: {
+					text: "Customer Social Engagement"
+				},
+				axisX: {
+					title: "Time"
+				},
+				axisY: {
+					title: "Percentage",
+					suffix: "%",
+					includeZero: true
+				},
+				data: [{
+					type: "line",
+					name: "CPU Utilization",
+					connectNullData: true,
+					//nullDataLineDashType: "solid",
+					xValueType: "dateTime",
+					xValueFormatString: "DD MMM hh:mm TT",
+					yValueFormatString: "#,##0.##\"%\"",
+					dataPoints: [
+						{ x: 1501048673000, y: 35.939 },
+						{ x: 1501052273000, y: 40.896 },
+						{ x: 1501055873000, y: 56.625 },
+						{ x: 1501059473000, y: 26.003 },
+						{ x: 1501063073000, y: 20.376 },
+						{ x: 1501066673000, y: 19.774 },
+						{ x: 1501070273000, y: 23.508 },
+						{ x: 1501073873000, y: 18.577 },
+						{ x: 1501077473000, y: 15.918 },
+						{ x: 1501081073000, y: null }, // Null Data
+						{ x: 1501084673000, y: 10.314 },
+						{ x: 1501088273000, y: 10.574 },
+						{ x: 1501091873000, y: 14.422 },
+						{ x: 1501095473000, y: 18.576 },
+						{ x: 1501099073000, y: 22.342 },
+						{ x: 1501102673000, y: 22.836 },
+						{ x: 1501106273000, y: 23.220 },
+						{ x: 1501109873000, y: 23.594 },
+						{ x: 1501113473000, y: 24.596 },
+						{ x: 1501117073000, y: 31.947 },
+						{ x: 1501120673000, y: 31.142 }
+					]
+				}]
+			});
+			chart.render();
+			}
+		</script>
+
+	</head>
+	<body>
+		<!-- Nav -->
+		<section class="side-nav">
+			<div class="nav">
+				<ul class="top-left-nav navbar-nav">
+					<li class="nav-item">
+						<div class="link">
+							<a class="nav-link" href="{{ url_for('home') }}">
+								<img src="../static/src/logo.svg">
+							</a>
+						</div>
+					</li>
+					<div class="mid-nav">
+						<li class="nav-item active">
+							<a class="nav-link" href="#">
+								<i class="fa fa-th-large"></i>
+							</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="{{ url_for('clientAdDashboard')}}">
+								<i class="fa fa-newspaper-o"></i>
+							</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#">
+								<i id="notifications" onclick="" class="fa fa-bell-o"></i>
+							</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#">
+								<i id="chats" onclick="" class="fa fa-comments-o"></i>
+							</a>
+						</li>
+					</div>
+				</ul>
+				<ul class="bottom-left-nav navbar-nav">
+					<li class="nav-item">
+						<a class="nav-link" href="{{ url_for('logout') }}">
+							<i class="fa fa-power-off"></i>
+						</a>
+					</li>
+				</ul>
+			</div>
+		</section>
+
+		<!-- Header -->
+
+		<section class="heat">
+			<div class="middle">
+				<div class="header">
+					<span id="user" class="material-icons">perm_identity</span>
+					<h3>Welcome back, <span id="value">{{ value }}</span></h3>
+				</div>
+				<div class="session-redirect">
+					<h5>Get right back in with a new recommendation session to start</h5>
+					<a href="{{ url_for('clientSession') }}"><i class="fa fa-plus-circle"></i></a>
+				</div>
+				<!-- Chart -->
+				<div class="chart">
+					<!-- <canvas id="myAreaChart" style="display: block; width: 365px; height: 160px;" class="chartjs-render-monitor"></canvas> -->
+					<div id="chartContainer" style="height: 95%; width: 95%;position: absolute; top: 5px; left: 17px;"></div>
+				</div>
+				<!-- res-cards -->
+				<div class="results">
+					<div class="res-cards row">
+						<div class="col-md-6 cards">
+							<div class="rcard facebook">
+								<h5>facebook</h5>
+								<p>The world's largest social media platform with a purpose to make the world more open and connected. Reach billions of potential customers with facebook.</p>
+								<i class="fa fa-facebook-official"></i>
+							</div>
+						</div>
+						<div class="col-md-6 cards">
+							<div class="rcard youtube">
+								<h5>youtube</h5>
+								<p>YouTube is a video sharing service that allows users to watch videos posted by other users and upload videos of their own to promote their brands.</p>
+								<i class="fa fa-youtube-play"></i>
+							</div>
+						</div>
+						<div class="col-md-6 cards">
+							<div class="rcard twitter">
+								<h5>twitter</h5>
+								<p>Twitter is a social media site centered around real time conversations called trends with a purpose to connect people by sharing thoughts.</p>
+								<i class="fa fa-twitter-square"></i>
+							</div>
+						</div>
+
+						<div class="col-md-6 cards d-none">
+							<div class="rcard pinterest">
+								<h5>pinterest</h5>
+								<p>A visual discovery engine where people can find inspiration and ideas for their interests, hobbies and projects.</p>
+								<i class="fa fa-pinterest"></i>
+							</div>
+						</div>
+						<div class="col-md-6 cards d-none">
+							<div class="rcard instagram">
+								<h5>instagram</h5>
+								<p>Instagram is an entirely visual platform gaining more momentum with time and a major percentage of the users being young adults.</p>
+								<i class="fa fa-instagram"></i>
+							</div>
+						</div>
+						<div class="col-md-6 cards d-none">
+							<div class="rcard medium">
+								<h5>medium</h5>
+								<p>Medium is a blogging platform, a place to read articles on the Internet. Our sole purpose is to help you find or share compelling ideas, knowledge, and perspectives.</p>
+								<img src="../static/src/medium.svg">
+							</div>
+						</div>
+
+						<div class="col-md-6 cards d-none">
+							<div class="rcard linkedin">
+								<h5>linkedin</h5>
+								<p>Linkedin is a business and employment-oriented online service focused on professional networking and career development.</p>
+								<i class="fa fa-linkedin-square"></i>
+							</div>
+						</div>
+						<div class="col-md-6 cards d-none">
+							<div class="rcard reddit">
+								<h5>reddit</h5>
+								<p>Reddit is a network of communities based on people's interests. Find communities you're interested in and be a part.</p>
+								<i class="fa fa-reddit"></i>
+							</div>
+						</div>
+						<div class="col-md-6 cards d-none">
+							<div class="rcard tumblr">
+								<h5>tumblr</h5>
+								<p>A new way to put all your blogs, pictures, anything you want to share with other people in one single location.</p>
+								<i class="fa fa-tumblr-square"></i>
+							</div>
+						</div>
+
+						<div class="col-md-6 cards d-none">
+							<div class="rcard behance">
+								<h5>behance</h5>
+								<p>Behance is a social media platform to showcase portfolios of visual work such as graphic design, fashion, illustration, photography and discover creative work.</p>
+								<i class="fa fa-behance"></i>
+							</div>
+						</div>
+						<div class="col-md-6 cards d-none">
+							<div class="rcard snapchat">
+								<h5>snapchat</h5>
+								<p>A multimedia messaging service with new type of camera, to take a picture or video, add filters, lenses or other effects and share them with friends.</p>
+								<i class="fa fa-snapchat"></i>
+							</div>
+						</div>
+						<div class="col-md-6 cards d-none">
+							<div class="rcard spotify">
+								<h5>spotify</h5>
+								<p>Spotify is a digital music service that allows you access and share millions of songs and podcasts. Get going on spotify.</p>
+								<i class="fa fa-spotify"></i>
+							</div>
+						</div>
+
+						<div class="col-md-6 cards d-none">
+							<div class="rcard github">
+								<h5>github</h5>
+								<p>Github brings together the world's largest community of developers to discover, share and build better software.</p>
+								<i class="fa fa-github"></i>
+							</div>
+						</div>
+						<div class="col-md-6 cards d-none">
+							<div class="rcard tiktok">
+								<h5>tiktok</h5>
+								<p>A social media platform for creating, sharing and discovering short music videos, think Karaoke for the digital age.</p>
+								<img src="../static/src/tiktok.svg">
+							</div>
+						</div>
+						<div class="col-md-6 cards d-none">
+							<div class="rcard researchgate">
+								<h5>Research Gate</h5>
+								<p>A commercial social networking site for researchers to share publications, research papers, ask and answer questions, and find collaborators.</p>
+								<img src="../static/src/researchgate.svg">
+							</div>
+						</div>
+
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- right-widgets -->
+		<section class="right">
+			<div class="right-box">
+				<div class="tools">
+					<div class="request-form">
+						<label>User Requests Form</label>
+						<form method="post" action="http://localhost:3000/client">
+							<input type="text" name="user-request" placeholder="type requests here.." autocomplete="off">
+							<input type="submit" value="Send">
+							<a href="#"><i class="fa fa-paper-plane"></i></a>
+						</form>
+					</div>
+					<div class="stats">
+						<label>traffic growth</label>
+						<div class="stat-cards">
+							<div class="row">
+								<div class="col-md-4">
+									<div class="scar">
+										<h5><span class="stat-ve"><i class="fa fa-plus plusve">&nbsp;</i><i class="fa fa-minus negave d-none">&nbsp;</i></span>39%</h5>
+										<p>Conversion Rate</p>
+									</div>
+								</div>
+								<div class="col-md-4">
+									<div class="scar">
+										<h5><span class="stat-ve"><i class="fa fa-plus plusve">&nbsp;</i><i class="fa fa-minus negave d-none">&nbsp;</i></span>14%</h5>
+										<p>Target Lead Growth</p>
+									</div>
+								</div>
+								<div class="col-md-4">
+									<div class="scar">
+										<h5><span class="stat-ve"><i class="fa fa-plus plusve d-none">&nbsp;</i><i class="fa fa-minus negave">&nbsp;</i></span>0.1%</h5>
+										<p>Social Engagement</p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="row stat-below">
+							<div class="col-md-6">
+								<div class="pad">
+									<p>Estimated ROI</p>
+									<h6>1693.75%</h6>
+								</div>
+							</div>
+							<div class="col-md-6">
+								<div class="pad">
+									<p>Placement CPM</p>
+									<h6>N540.30</h6>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="adtools">
+						<div class="widget">
+							<div class="buffer">
+								<img src="../static/src/buffer.svg">
+								<div class="widget-text">
+									<label>social media management</label>
+									<p>Get started with buffer to manage your social accounts.</p>
+								</div>
+							</div>
+						</div>
+						<div class="widget">
+							<div class="analytics">
+								<i class="fa fa-line-chart"></i>
+								<div class="widget-text">
+									<label>analyze customer activity</label>
+									<p>Adapt to changes in customer purchase behaviour.</p>
+								</div>
+							</div>
+						</div>
+						<div class="widget">
+							<div class="adsense">
+								<img src="../static/src/sense.svg">
+								<div class="widget-text">
+									<label>monetize your website</label>
+									<p>Make money of idle websites. Ad costs are a cycle.</p>
+								</div>
+							</div>
+						</div>
+						<div class="notifications">
+							<div class="widget-list">
+								<i class="fa fa-bell-o"></i>
+								<div class="notification-text">
+									<label>notifications</label>
+									<p><span id="admin">Admin : </span> <span>The list requested has been compiled and will be mailed shortly.</span></p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<footer>
+			<div class="footer-copyright footer-f text-center py-0">© 2020 Copyright<a href="#header"> OLAWUYI </a>
+		  	</div>
+		</footer>
+
+		<script src="../static/js/canvasjs.min.js"></script>
+		<script type="text/javascript">
+			var results = {{ data|tojson }};
+			if (results.length > 0){
+				changeCards(results);
+			}
+			function changeCards(arr){
+				$(".cards").addClass("d-none");
+				// select only those in res-card div
+				var appdata = ["behance","facebook","github","instagram","linkedin","medium","pinterest","reddit","research-gate","snapchat","spotify","tiktok","tumblr","twitter","youtube"];
+				for (var i = 0; i <= 4; i++) {
+				    for (var j = 0; j < appdata.length; j++){
+				        if (appdata[j] == arr[i]){
+				            $("."+appdata[j]).parent().removeClass("d-none")
+				            console.log(arr[i], appdata[j]);
+				        }
+				    }
+				}
+				// remove class d-none from their parent element.
+			}
+		</script>
+	</body>
+</html>

@@ -1,0 +1,470 @@
+body{
+    width: -webkit-fill-available;
+    height: -webkit-fill-available;
+    font-family: 'Tenali Ramakrishna', sans-serif;
+    background: #DBC7B5;
+    color: blue;
+}
+.side-nav{
+	position: absolute;
+	width: 70px;
+	height: 100%;
+	left: 0px;
+	top: 0px;
+
+	background: #202020;
+}
+.side-nav .nav{
+	margin-left: 10px;
+}
+.side-nav .nav-item{
+	width: 50px;
+	height: 50px;
+	margin: 20px 0px;
+	/*border: 1px solid white;*/
+}
+a{
+	color: #DBC7B5;
+}
+a:hover{
+	text-decoration: none;
+	color: #DBC7B5;
+}
+.side-nav .nav-item a{
+	font-size: 30px;
+	position: relative;
+	left: 8.5px;
+}
+.side-nav .nav-item a:hover{
+	color: rgba(219,199,181,0.3);
+	transition: .5s;
+}
+.side-nav .bottom-left-nav{
+	position: absolute;
+	bottom: 0px;
+}
+.link{
+	position: absolute;
+	left: 5px;
+}
+.link img{
+	width: 40px;
+	height: 35px;
+}
+.mid-nav{
+	padding-top: 30px;
+}
+.heat{
+	/*margin: 1rem;*/
+	width: 800px;
+	height: 90%;
+	position: absolute;
+	top: 0px;
+	left: 100px;
+	margin-top: 20px;
+	color: #202020;
+}
+
+.heat .header{
+	position: relative;
+	width: 500px;
+	height: 70px;
+	top: 10px;
+    left: 10px;
+}
+.heat .header #user{
+	font-size: 50px;
+	position: relative;
+    left: 5px;
+    top: 5px;
+}
+/*.heat .header #value{
+	text-transform: uppercase;
+	letter-spacing: 0.2em;
+}*/
+.heat .header h3{
+	text-transform: uppercase;
+	letter-spacing: 0.2em;
+	font-size: 24px;
+	position: absolute;
+	top: 25px;
+	left: 60px;
+}
+
+.heat .sm-cards{
+	margin: 15px 0;
+	width: 600px;
+	height: 80px;
+}
+.heat .sm-cards p{
+	font-size: 20px;
+	position: relative;
+	left: 20px;
+}
+.heat .sm-cards .row{
+	margin-top: -10px;
+}
+.heat .sm-cards .res-cards{
+	width: 50px;
+	height: 50px;
+	border-radius: 15px;
+}
+.heat .sm-cards .scroll{
+	position: absolute;
+    top: 130px;
+    left: 620px;
+}
+.heat .sm-cards .scroll span{
+	font-size: 30px;
+}
+.heat .sm-cards .scroll span:hover{
+	cursor: pointer;
+}
+.heat .sm-cards .res-cards i{
+	font-size: 30px;
+	position: relative;
+	top: 10px;
+	left: 10px;
+}
+.heat .sm-cards .res-cards img{
+	width: 30px;
+	height: 30px;
+	position: relative;
+	top: 10px;
+	left: 10px;
+}
+.heat .chart{
+	width: 700px;
+    height: 250px;
+    border-radius: 30px;
+    background: #202020;
+    position: relative;
+    top: 25px;
+    left: 10px;
+}
+
+/*Canvas Embed*/
+.heat .chart canvas{}
+
+/*.heat .res-cards{}
+.heat .row .col-md-6{}*/
+
+/*RES-CARDS*/
+
+.heat .sm-cards .row .pinterest{
+	color: #DBC7B5;
+	background: #BD081C;
+}
+.heat .sm-cards .row .twitter{
+	color: #DBC7B5;
+	background: #00ACEE;
+}
+.heat .sm-cards .row .instagram{
+	color: #FFFFFF;
+	background: linear-gradient(-90deg, #515BD4, #F58529);
+}
+
+.heat .sm-cards .row .linkedin{
+	color: #DBC7B5;
+	background: #0E76A8;
+}
+.heat .sm-cards .row .facebook{
+	color: #DBC7B5;
+	background: #3B5998;
+}
+.heat .sm-cards .row .snapchat{
+	color: #000000;
+	background: #FFFC00;
+}
+
+.heat .sm-cards .row .apple{
+	color: #000000;
+	background: #DADADA;
+}
+.heat .sm-cards .row .google{
+	background: #202020;
+	color: #DBC7B5;
+}
+
+.heat .sm-cards .row .youtube{
+	color: #DBC7B5;
+	background: #FF0000;
+}
+.heat .sm-cards .row .tumblr{
+	color: #DBC7B5;
+	background: #34526F;
+}
+.heat .sm-cards .row .tiktok{
+	color: #DBC7B5;
+	background: #010101;
+}
+
+.heat .sm-cards .row .medium{
+	color: #DBC7B5;
+	background: #000000;
+}
+.heat .sm-cards .row .spotify{
+	color: #000000;
+	background: #1ED760;
+}
+.heat .sm-cards .row .behance{
+	color: #DBC7B5;
+	background: #0077D6;
+}
+
+.heat .sm-cards .row .github{
+	color: #DBC7B5;
+	background: #211F1F;
+}
+.heat .sm-cards .row .researchgate{
+	color: #000000;
+	background: #1BC38D;
+	font-weight: bold;
+}
+.heat .sm-cards .row .reddit{
+	color: #DBC7B5;
+	background: #FF4500;
+}
+
+.heat .addtools{
+	padding: 1rem;
+	position: relative;
+	top: 30px;
+	left: 10px;
+}
+.heat .addtools p{
+	font-size: 20px;
+	margin-top: 10px;
+	margin: 0px;
+}
+.heat .addtools .formcard{
+	width: 200px;
+	height: 70px;
+	background: #202020;
+	border-radius: 30px;
+	color: #DBC7B5;
+	position: relative;
+	left: 20px;
+}
+.heat .addtools .formcard p{
+	position: relative;
+	top: 20px;
+    left: 20px;
+}
+.heat .addtools .formcard span{
+	position: absolute;
+    top: 20px;
+    left: 160px;
+}
+
+/*Right*/
+.right{
+	position: absolute;
+	width: 325px;
+	height: 620px;
+	border-radius: 30px;
+	background: #202020;
+	left: 920px;
+	top: 20px;
+}
+.right .right-box{
+	margin: 1rem;
+}
+.right .tools{
+	width: 300px;
+	position: relative;
+	left: 10px;
+}
+.plusve{
+	color: green;
+}
+.negave{
+	color: red;
+}
+.right .tools .stats{
+	position: relative;
+	width: 270px;
+	height: 200px;
+	border-radius: 30px;
+	background: #111111;
+	left: 1.5px;
+}
+.right .tools .stats label{
+	text-transform: uppercase;
+	font-size: 24px;
+	color: #DBC7B5;
+	position: relative;
+	left: 90px;
+}
+.right .tools .stats .stat-info{
+	width: 230px;
+    height: 135px;
+    position: relative;
+    left: 20px;
+}
+.right .tools .stats .stat-info h5{
+	color: #DBC7B5;
+    font-size: 40px;
+    position: relative;
+    left: 12px;
+}
+.right .tools .stats .stat-info label{
+	font-size: 18px;
+    width: 70px;
+    text-align: center;
+    line-height: 20px;
+    margin-top: 0px;
+    position: absolute;
+    left: 0px;
+}
+.right .tools .stats .below-row{
+	position: absolute;
+	top: 160px;
+    left: 12px;
+}
+.right .tools .stats .below-row h6{
+	font-size: 18px;
+	color: #DBC7B5;
+}
+.right .tools .stats .below-row p{
+	font-size: 24px;
+    position: absolute;
+    top: -7px;
+    left: 205px;
+}
+.right .tools .below-stats{
+	width: 270px;
+    height: 380px;
+    position: relative;
+    border-radius: 30px;
+    background: #111111;
+    top: 5px;
+    left: 1.5px;
+}
+.right .tools .below-stats label{
+	text-transform: uppercase;
+	font-size: 24px;
+	color: #DBC7B5;
+	position: relative;
+	margin-top: 5px;
+    margin-bottom: 0px;
+    left: 75px;
+}
+.right .tools .below-stats .notify{
+	width: 230px;
+    height: 70px;
+    margin: 0px;
+    position: relative;
+    left: 20px;
+    top: 5px;
+    color: #DBC7B5;
+    margin-bottom: 12px;
+    border-radius: 30px;
+    background: #202020;
+}
+.right .tools .below-stats .notify span{
+	position: absolute;
+	font-size: 18px;
+    top: 28px;
+    left: 10px;
+}
+.right .tools .below-stats .notify h6{
+	position: relative;
+	top: 5px;
+    font-size: 18px;
+    left: 35px;
+    font-weight: bold;
+}
+.right .tools .below-stats .notify p{
+	position: absolute;
+	left: 35px;
+    line-height: 18px;
+    overflow: hidden;
+}
+
+
+.right .tools .below-stats .scroll{
+	width: 50px;
+    height: 20px;
+    position: relative;
+    background: #202020;
+    border-radius: 15px;
+    left: 120px;
+}
+.right .tools .below-stats .scroll span{
+	font-size: 15px;
+	position: absolute;
+    top: 2px;
+    left: 17px;
+}
+.right .tools .below-stats .info-form{
+	width: 230px;
+	height: 55px;
+	border-radius: 30px;
+	margin: 0px;
+    position: relative;
+    left: 20px;
+    top: 7px;
+	background: #202020;
+}
+.right .tools .below-stats .info-form label{
+	font-size: 15px;
+	width: 200px;
+	margin: 0px;
+	position: relative;
+	top: 3.5px;
+    left: 25px;
+}
+.right .tools .below-stats .info-form input[type="text"]{
+	background: inherit;
+	border: none;
+	color: #DBC7B5;
+	position: absolute;
+	width: 150px;
+    border-bottom: 1px solid #DBC7B5;
+    top: 20px;
+    left: 20px;
+}
+.right .tools .below-stats .info-form input[type="submit"]{
+	background: inherit;
+	border: none;
+	color: #DBC7B5;
+	position: relative;
+	left: 180px;
+}
+
+footer{
+	position: fixed;
+    margin: auto;
+    padding: auto;
+    font-size: 15px;
+    /*border: 1px solid beige;*/
+    color: #202020;
+    bottom: 0;
+    left: 45%;
+}
+footer a{
+	color: #202020;
+}
+footer a:hover{
+	color: #202020;
+}
+
+
+
+/*Social Media Tools*/
+/*facebook
+youtube
+twitter
+pinterest
+instagram
+medium
+linkedin
+reddit
+tumblr
+behance
+snapchat
+spotify
+github
+tiktok
+researchGate*/

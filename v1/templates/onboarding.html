@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+	    <meta http-equiv="x-ua-compatible" content="ie=edge">
+		<title>Smart Marketing - Welcome</title>
+		<meta name="description" content="">
+	    <meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="../static/css/bootstrap.min.css">
+		<link rel="stylesheet" href="../static/css/onboarding.css">
+		<link href="https://fonts.googleapis.com/css2?family=Tenali+Ramakrishna&display=swap" rel="stylesheet">
+		<link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	</head>
+	<body>
+		<div class="top">
+			<div class="jumbotron">
+				<img src="../static/src/onboarding2.jpg">
+				<div class="user-widget">
+					<span id="user" class="material-icons">perm_identity</span>
+					<p>Hello, <span id="username">{{ value }}</span></p>
+				</div>
+			</div>
+		</div>
+		<div class="container section-80">
+			<div class="row">
+				<div class="col-md-6 d-md-block d-sm-none" id="text">
+					<h4>Change the way you market</h4>
+					<p>MACHINE LEARNING UNLOCKS A WHOLE NEW WORLD OF OPPORTUNITIES TO US. We know where your cheese is and we provide the tools you need to reach YOUR TARGET AUDIENCE digitally.</p>
+				</div>
+				<div class="col-md-6">
+					<div id="link-button">
+						<a href="{{ url_for('clientDashboard') }}"><span id="inline">Get started <i class="fa fa-chevron-right"></i></span></a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<footer>
+			<div class="footer-copyright footer-f text-center py-0">© 2020 Copyright<a href="#header"> OLAWUYI </a>
+		  	</div>
+		</footer>
+	</body>
+</html>

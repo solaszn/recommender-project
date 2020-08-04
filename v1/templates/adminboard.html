@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+	    <meta http-equiv="x-ua-compatible" content="ie=edge">
+		<title>Smart Marketing - Dashboard</title>
+		<meta name="description" content="">
+	    <meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="../static/css/bootstrap.min.css">
+		<link rel="stylesheet" href="../static/css/adminstyle.css">
+		<link href="https://fonts.googleapis.com/css2?family=Tenali+Ramakrishna&display=swap" rel="stylesheet">
+		<link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+		<script type="text/javascript" src="../static/js/jquery.js"></script>
+
+		<script type="text/javascript">
+			window.onload = function () {
+
+			var chart = new CanvasJS.Chart("chartContainer", {
+				theme: "dark1", // "light2", "dark1", "dark2"
+				animationEnabled: true,
+				title: {
+					text: "Training Model Accuracy"
+				},
+				axisX:{
+					valueFormatString: "DD MMM",
+					crosshair: {
+						enabled: true,
+						snapToDataPoint: true
+					}
+				},
+				axisY: {
+					title: "Percentage Increase",
+					includeZero: true,
+					crosshair: {
+						enabled: true
+					}
+				},
+				toolTip:{
+					shared:true
+				},  
+				legend:{
+					cursor:"pointer",
+					verticalAlign: "bottom",
+					horizontalAlign: "left",
+					dockInsidePlotArea: true,
+					itemclick: toogleDataSeries
+				},
+				data: [{
+					type: "line",
+					showInLegend: true,
+					name: "TF-IDF & Cosine Similarity",
+					markerType: "square",
+					xValueFormatString: "DD MMM, YYYY",
+					color: "#F08080",
+					dataPoints: [
+						{ x: new Date(2017, 0, 3), y: 650 },
+						{ x: new Date(2017, 0, 4), y: 700 },
+						{ x: new Date(2017, 0, 5), y: 710 },
+						{ x: new Date(2017, 0, 6), y: 658 },
+						{ x: new Date(2017, 0, 7), y: 734 },
+						{ x: new Date(2017, 0, 8), y: 963 },
+						{ x: new Date(2017, 0, 9), y: 847 },
+						{ x: new Date(2017, 0, 10), y: 853 },
+						{ x: new Date(2017, 0, 11), y: 869 },
+						{ x: new Date(2017, 0, 12), y: 943 },
+						{ x: new Date(2017, 0, 13), y: 970 },
+						{ x: new Date(2017, 0, 14), y: 869 },
+						{ x: new Date(2017, 0, 15), y: 890 },
+						{ x: new Date(2017, 0, 16), y: 930 }
+					]
+				},
+				{
+					type: "line",
+					showInLegend: true,
+					name: "Random Forest",
+					lineDashType: "dash",
+					dataPoints: [
+						{ x: new Date(2017, 0, 3), y: 510 },
+						{ x: new Date(2017, 0, 4), y: 560 },
+						{ x: new Date(2017, 0, 5), y: 540 },
+						{ x: new Date(2017, 0, 6), y: 558 },
+						{ x: new Date(2017, 0, 7), y: 544 },
+						{ x: new Date(2017, 0, 8), y: 693 },
+						{ x: new Date(2017, 0, 9), y: 657 },
+						{ x: new Date(2017, 0, 10), y: 663 },
+						{ x: new Date(2017, 0, 11), y: 639 },
+						{ x: new Date(2017, 0, 12), y: 673 },
+						{ x: new Date(2017, 0, 13), y: 660 },
+						{ x: new Date(2017, 0, 14), y: 562 },
+						{ x: new Date(2017, 0, 15), y: 643 },
+						{ x: new Date(2017, 0, 16), y: 570 }
+					]
+				}]
+			});
+			chart.render();
+
+			function toogleDataSeries(e){
+				if (typeof(e.dataSeries.visible) === "undefined" || e.dataSeries.visible) {
+					e.dataSeries.visible = false;
+				} else{
+					e.dataSeries.visible = true;
+				}
+				chart.render();
+			}
+			}
+		</script>
+
+	</head>
+	<body>
+		<!-- Nav -->
+		<section class="side-nav">
+			<div class="nav">
+				<ul class="top-left-nav navbar-nav">
+					<li class="nav-item">
+						<div class="link">
+							<a class="nav-link" href="{{ url_for('home') }}">
+								<img src="../static/src/logo.svg">
+							</a>
+						</div>
+					</li>
+					<div class="mid-nav">
+						<li class="nav-item active">
+							<a class="nav-link" href="#">
+								<span class="material-icons">insert_comment</span>
+							</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#">
+								<span class="material-icons">notifications_none</span>
+							</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#">
+								<span class="material-icons">cloud_upload</span>
+							</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#">
+								<span class="material-icons">insert_chart_outlined</span>
+							</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#">
+								<span class="material-icons">error_outline</span>
+							</a>
+						</li>
+					</div>
+				</ul>
+				<ul class="bottom-left-nav navbar-nav">
+					<li class="nav-item">
+						<a class="nav-link" href="{{ url_for('logout') }}">
+							<span class="material-icons">power_settings_new</span>
+						</a>
+					</li>
+				</ul>
+			</div>
+		</section>
+
+		<!-- Header -->
+
+		<section class="heat">
+			<div class="middle">
+				<div class="header">
+					<span id="user" class="material-icons">perm_identity</span>
+					<h3>Welcome back, <span id="value">{{ value }}</span></h3>
+				</div>
+				<div class="sm-cards">
+					<p>Social Platforms</p>
+					<div class="container">
+						<div id="scroll-focus">
+							<div class="row first d-none">
+								<div class="col">
+									<div class="res-cards facebook">
+										<i class="fa fa-facebook-official"></i>
+									</div>
+								</div>
+								<div class="col">
+									<div class="res-cards youtube">
+										<i class="fa fa-youtube-play"></i>
+									</div>
+								</div>
+								<div class="col">
+									<div class="res-cards twitter">
+										<i class="fa fa-twitter-square"></i>
+									</div>
+								</div>
+								<div class="col">
+									<div class="res-cards pinterest">
+										<i class="fa fa-pinterest"></i>
+									</div>
+								</div>
+
+								<div class="col">
+									<div class="res-cards instagram">
+										<i class="fa fa-instagram"></i>
+									</div>
+								</div>
+								<div class="col">
+									<div class="res-cards medium">
+										<img src="../static/src/medium.svg">
+									</div>
+								</div>
+
+								<div class="col">
+									<div class="res-cards linkedin">
+										<i class="fa fa-linkedin-square"></i>
+									</div>
+								</div>
+								<div class="col">
+									<div class="res-cards reddit">
+										<i class="fa fa-reddit"></i>
+									</div>
+								</div>
+							</div>
+
+							<div class="row second">
+								<div class="col">
+									<div class="res-cards tumblr">
+										<i class="fa fa-tumblr-square"></i>
+									</div>
+								</div>
+								<div class="col">
+									<div class="res-cards behance">
+										<i class="fa fa-behance"></i>
+									</div>
+								</div>
+
+								<div class="col">
+									<div class="res-cards snapchat">
+										<i class="fa fa-snapchat"></i>
+									</div>
+								</div>
+								<div class="col">
+									<div class="res-cards spotify">
+										<i class="fa fa-spotify"></i>
+									</div>
+								</div>
+
+								<div class="col">
+									<div class="res-cards github">
+										<i class="fa fa-github"></i>
+									</div>
+								</div>
+								<div class="col">
+									<div class="res-cards google">
+										<img src="../static/src/google.svg">
+									</div>
+								</div>
+								<div class="col">
+									<div class="res-cards tiktok">
+										<img src="../static/src/tiktok.svg">
+									</div>
+								</div>
+								<div class="col">
+									<div class="res-cards researchgate">
+										<img src="../static/src/researchgate.svg">
+									</div>
+								</div>
+							</div>
+
+						</div>
+						<div class="scroll">
+							<a style="color: #202020;" onclick="toggleRow()"><span class="material-icons">play_circle_filled</span></a>
+						</div>
+					</div>
+				</div>
+				<!-- Chart -->
+				<div class="chart">
+					<!-- <canvas id="myAreaChart" style="display: block; width: 365px; height: 160px;" class="chartjs-render-monitor"></canvas> -->
+					<div id="chartContainer" style="height: 95%; width: 95%;position: absolute; top: 5px; left: 17px;"></div>
+				</div>
+				<!-- add-cards -->
+				<div class="addtools">
+					<p>New Tools</p>
+					<div class="add-cards row">
+						<div class="col-md-6 cards">
+							<div class="formcard">
+								<p>Social Media</p>
+								<span class="material-icons">add</span>
+							</div>
+						</div>
+						<div class="col-md-6 cards">
+							<div class="formcard">
+								<p>Advertisement Tool</p>
+								<span class="material-icons">add</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- right-widgets -->
+		<section class="right">
+			<div class="right-box">
+				<div class="tools">
+					<div class="stats">
+						<label>statistics</label>
+						<div class="row">
+							<div class="col-md-6">
+								<div class="stat-info">
+									<h5>36</h5>
+									<label>Total Sessions</label>
+								</div>	
+							</div>
+							<div class="col-md-6">
+								<div class="stat-info">
+									<h5>68%</h5>
+									<label>Estimation Accuracy</label>
+								</div>	
+							</div>
+						</div>
+						<div class="below-row">
+							<h6>Algorithm Testing Accuracy (%): </h6><p class="plusve">{{ data }}</p>
+						</div>
+					</div>
+					<div class="below-stats">
+						<label>User requests</label>
+						<div class="notify">
+							<span class="material-icons requests">priority_high</span>
+							<h6>Bukka De Sol</h6>
+							<p>Hello, Please clear my recent session results.</p>
+						</div>
+						<div class="notify">
+							<span class="material-icons requests">priority_high</span>
+							<h6>Bukka De Sol</h6>
+							<p>Hello, Please clear my recent session results.</p>
+						</div>
+						<div class="notify">
+							<span class="material-icons requests">priority_high</span>
+							<h6>Bukka De Sol</h6>
+							<p>Hello, Please clear my recent session results.</p>
+						</div>
+						<div class="scroll">
+							<a href="#"><span class="material-icons">south</span></a>
+						</div>
+						<div class="info-form">
+							<label>General Information</label>
+							<form method="post" action="http://localhost:3000/admin">
+								<input type="text" name="user-request" placeholder="type requests here.." autocomplete="off">
+								<input type="submit" value="Send">
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<footer>
+			<div class="footer-copyright footer-f text-center py-0">© 2020 Copyright<a href="#header"> OLAWUYI </a>
+		  	</div>
+		</footer>
+
+		<script src="../static/js/canvasjs.min.js"></script>
+		<script type="text/javascript">
+			function toggleRow(){
+				if($(".first").hasClass("d-none")){
+					$(".second").addClass("d-none");
+					$(".first").removeClass("d-none");
+				}
+				else{
+					$(".first").addClass("d-none");
+					$(".second").removeClass("d-none");
+				}
+			}
+		</script>
+	</body>
+</html>
