@@ -126,6 +126,66 @@ def clientSession():
     return render_template('index.html')
 
 
+@app.route('/admin/addsm', methods=['POST', 'GET'])
+def adminAddSm():
+    if 'username' in session:
+        admin = mongo.db.admin
+        usertype = admin.find_one({'name' : session['username']})
+        if usertype is not None:
+            client = session['username']
+            data = alg_accuracy
+            if request.method == 'POST':
+                platforms = mongo.db.platforms
+                platforms.insert_one({'Platform': request.form['smtool'], 'Description': request.form['smdescription'], 'Class': 'Social Media Tools'})
+                return render_template('adminboard.html', value=client, data=data)
+
+
+            return render_template('adminboard.html', value=client, data=data)
+        return render_template('index.html')
+
+    return render_template('index.html')
+
+@app.route('/admin/addad', methods=['POST', 'GET'])
+def adminAddAd():
+    if 'username' in session:
+        admin = mongo.db.admin
+        usertype = admin.find_one({'name' : session['username']})
+        if usertype is not None:
+            client = session['username']
+            data = alg_accuracy
+            if request.method == 'POST':
+                platforms = mongo.db.platforms
+                platforms.insert_one({'Platform': request.form['tool'], 'Description': request.form['tooldescription'], 'Class': 'Advertisement Tools'})
+                return render_template('adminboard.html', value=client, data=data)
+
+
+
+            return render_template('adminboard.html', value=client, data=data)
+        return render_template('index.html')
+
+    return render_template('index.html')
+
+@app.route('/admin/info', methods=['POST', 'GET'])
+def adminSendInfo():
+    if 'username' in session:
+        admin = mongo.db.admin
+        usertype = admin.find_one({'name' : session['username']})
+        if usertype is not None:
+            client = session['username']
+            data = alg_accuracy
+            if request.method == 'POST':
+                chat_collections = mongo.db.chats
+                time = datetime.datetime.now()
+                chat_collections.insert_one({'type': 'general information', 'clientName': session['username'], 'information': request.form['info'], 'time': time.strftime("%c")})
+                return render_template('adminboard.html', value=client, data=data)
+                    
+
+            return render_template('adminboard.html', value=client, data=data)
+        return render_template('index.html')
+
+    return render_template('index.html')
+
+
 @app.route('/logout')
 def logout():
     session.clear()
