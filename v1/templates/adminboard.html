@@ -12,6 +12,7 @@
 		<link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 		<script type="text/javascript" src="../static/js/jquery.js"></script>
+		<script type="text/javascript" src="../static/js/bootstrap.min.js"></script>
 
 		<script type="text/javascript">
 			window.onload = function () {
@@ -276,14 +277,48 @@
 					<div class="add-cards row">
 						<div class="col-md-6 cards">
 							<div class="formcard">
-								<p>Social Media</p>
-								<span class="material-icons">add</span>
+								<a href="#" data-target="#sm" data-toggle="modal"><p>Social Media</p>
+								<span class="material-icons">add</span></a>
+
+								<div id="sm" class="modal fade" role="dialog">
+								  <div class="modal-dialog">
+								    
+								    <div class="modal-content">
+										<div class="modal-body">
+										    <button data-dismiss="modal" class="close">&times;</button>
+										    <h4 style="color: #202020; text-transform: uppercase;">Add Platform</h4>
+										    <form method="post" action="http://localhost:3000/admin/addsm">
+										      <input type="text" style="border-radius: 15px;" placeholder="Name of Platform" class="username form-control" required="required" name="smtool"/>
+										      <input style="margin-top: 5px; border-radius: 15px;" type="text" placeholder="Description" class="password form-control" required="required" name="smdescription"/>
+										      <input style="color: #DBC7B5; width: 90px; border-radius: 30px; background-color: #202020; margin-top: 10px;" class="btn login" type="submit" value="Submit" />
+										    </form>
+										  </div>
+										</div>
+									</div>  
+								</div>
 							</div>
 						</div>
 						<div class="col-md-6 cards">
 							<div class="formcard">
-								<p>Advertisement Tool</p>
-								<span class="material-icons">add</span>
+								<a href="#" data-target="#ad" data-toggle="modal"><p>Advertisement Tool</p>
+								<span class="material-icons">add</span></a>
+
+								<div id="ad" class="modal fade" role="dialog">
+								  <div class="modal-dialog">
+								    
+								    <div class="modal-content">
+										<div class="modal-body">
+										    <button data-dismiss="modal" class="close">&times;</button>
+										    <h4 style="color: #202020; text-transform: uppercase;">Add Platform</h4>
+										    <form method="post" action="http://localhost:3000/admin/addad">
+										      <input style="border-radius: 15px;" type="text" placeholder="Name of Platform" class="username form-control" required="required" name="tool"/>
+										      <input style="margin-top: 5px; border-radius: 15px;" type="text" placeholder="Description" class="password form-control" required="required" name="tooldescription"/>
+										      <input style="color: #DBC7B5; width: 90px; border-radius: 30px; background-color: #202020; margin-top: 10px;" class="btn login" type="submit" value="Submit" />
+										    </form>
+										  </div>
+										</div>
+									</div>  
+								</div>
 							</div>
 						</div>
 					</div>
@@ -337,8 +372,8 @@
 						</div>
 						<div class="info-form">
 							<label>General Information</label>
-							<form method="post" action="http://localhost:3000/admin">
-								<input type="text" name="user-request" placeholder="type requests here.." autocomplete="off">
+							<form method="post" action="http://localhost:3000/admin/info">
+								<input type="text" name="info" placeholder="type requests here.." autocomplete="off">
 								<input type="submit" value="Send">
 							</form>
 						</div>
