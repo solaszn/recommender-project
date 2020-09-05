@@ -1,0 +1,181 @@
+industry,product-service,social-media,rating
+Transportation,Delivery and Logistics,Pinterest,3
+Information Communication Technology,Mobile software development,Twitter,4
+Artificial Intelligence,Artificial neural network,Instagram,4.5
+Agriculture,Aquaponics,Linkedin,5
+Construction,Carpentry,Facebook,4
+Education,Library,Snapchat,2
+Health,Fitness services,Youtube,5
+Food,Fast foods,Tumblr,4
+Hospitality,Hotel services,Tiktok,3.5
+Entertainment,Music,Spotify,5
+News Media,Newspaper,Medium,5
+Energy,Solar services,Research-Gate,5
+Electronics,Industrial equipments,Github,2.5
+Manufacturing,Research and development,Behance,5
+Social science,Culture,Reddit,4
+Finance,Bank,Pinterest,3
+Trade,Publishing services,Twitter,4
+Fashion,Luxury fashion services,Instagram,5
+Transportation,Haulage Services,Linkedin,2
+Information Communication Technology,Information Security,Facebook,5
+Artificial Intelligence,Robotics,Snapchat,3
+Agriculture,Livestock farming,Youtube,4
+Construction,3D printing,Research-Gate,4.5
+Education,Consultancy services,Tiktok,1.5
+Health,Psychiatric hospital,Medium,2
+Food,Beverages,Tumblr,4
+Hospitality,Tourism services,Behance,2
+Entertainment,Magazines,Github,0.5
+News Media,Press,Spotify,5
+Energy,Petroleum,Reddit,3
+Electronics,Communication equipments,Pinterest,5
+Manufacturing,Engineering,Twitter,1
+Social science,Law,Linkedin,4
+Finance,Insurance,Instagram,5
+Trade,Local distribution,Facebook,5
+Fashion,Fashion designer,Behance,4
+Transportation,Aerospace,Reddit,2
+Information Communication Technology,Cloud Services,Tumblr,1
+Artificial Intelligence,Expert systems,Tiktok,4.5
+Agriculture,Fertilizer,Medium,3.5
+Construction,Building technology,Spotify,0
+Education,Specialized research,Snapchat,2
+Health,Pharmacy,Github,0
+Food,Confectionaries,Youtube,5
+Hospitality,Recreational services,Research-Gate,1
+Entertainment,Arts,Pinterest,3
+News Media,Radio broadcast,Spotify,4
+Energy,Renewable energy,Instagram,3.5
+Electronics,Medical devices,Linkedin,1
+Manufacturing,Food processing,Facebook,1
+Social science,Economics,Snapchat,0
+Finance,Marketing,Youtube,4
+Trade,General Retailing services,Tumblr,1.5
+Fashion,Dress making services,Tiktok,5
+Transportation,Local Transportation,Medium,2.5
+Information Communication Technology,Computer System,Twitter,3.5
+Artificial Intelligence,Machine learning,Behance,2
+Agriculture,Horticulture,Github,0
+Construction,Structural engineering,Reddit,3.5
+Education,Primary education,Research-Gate,5
+Health,Hospital,Pinterest,1
+Food,Resturant,Twitter,4
+Hospitality,Resorts,Snapchat,5
+Entertainment,Comedy,Instagram,5
+News Media,Online media service,Youtube,5
+Energy,Power utility services,Linkedin,3.5
+Electronics,Consumer electronics,Facebook,4
+Manufacturing,Textile,Tumblr,1
+Social science,Philosophy,Reddit,2
+Finance,Investment,Medium,2.5
+Trade,Wholesale services,Spotify,1.5
+Fashion,Fashion retail,Behance,4.5
+Transportation,Haulage Services,Github,0
+Information Communication Technology,Prototyping and design,Research-Gate,4.5
+Artificial Intelligence,VR and AR,Tiktok,3.5
+Agriculture,Poultry,Pinterest,2
+Construction,Building contractor,Twitter,3.5
+Education,Aviation school,Instagram,1
+Health,Veterinary services,Linkedin,4
+Food,Pastries,Facebook,5
+Hospitality,Event planning services,Snapchat,4
+Entertainment,Movies,Youtube,5
+News Media,Press,Tumblr,3.5
+Energy,Inverters,Tiktok,0.5
+Electronics,Semiconductor supplies,Medium,0
+Manufacturing,Metallurgical services,Spotify,0
+Social science,Geography,Behance,2
+Finance,Brokerage services,Github,1.5
+Trade,Foreign distribution,Research-Gate,0
+Fashion,Fashion stylist,Reddit,2.5
+Transportation,Aerospace,Pinterest,1
+Information Communication Technology,Application Development,Github,5
+Artificial Intelligence,Data science,Medium,5
+Agriculture,Agronomy,Linkedin,4
+Construction,Civil engineering,Facebook,2.5
+Education,Training services,Youtube,4.5
+Health,Hospital,Tumblr,2.5
+Food,Catering services,Snapchat,3.5
+Hospitality,Tourism services,Tiktok,3
+Entertainment,Sports,Instagram,1.5
+News Media,Radio broadcast,Spotify,3.5
+Energy,Renewable energy,Behance,0
+Electronics,Office products,Twitter,1
+Manufacturing,Engineering,Research-Gate,2
+Social science,Law,Reddit,2
+Finance,Foreign exchange services,Pinterest,1
+Trade,General Retailing services,Twitter,3
+Fashion,Beauty,Instagram,5
+Transportation,Speed boats Yachts Cruise Ships,Linkedin,1
+Information Communication Technology,Web Application Development,Github,5
+Artificial Intelligence,Embedded systems,Snapchat,2
+Agriculture,Aquafarming,Youtube,4
+Construction,Architect,Tumblr,3.5
+Education,Online learning,Tiktok,1.5
+Health,Specialist hospital,Medium,1
+Food,Fast foods,Spotify,0
+Hospitality,Hotel services,Behance,2
+Entertainment,Arts,Facebook,3
+News Media,Newspaper,Research-Gate,5
+Energy,Petroleum,Reddit,0.5
+Electronics,Medical devices,Pinterest,2
+Manufacturing,Textile,Twitter,1
+Social science,Philosophy,Instagram,1.5
+Finance,Mortgage,Linkedin,3.5
+Trade,Publishing services,Facebook,4
+Fashion,Fashion merchandising,Snapchat,2
+Transportation,Local Transportation,Youtube,3
+Information Communication Technology,Mobile phones,Tumblr,4
+Artificial Intelligence,Internet of things,Tiktok,5
+Agriculture,Husbandry,Medium,2.5
+Construction,Real Estate,Spotify,0
+Education,University,Research-Gate,5
+Health,Therapist,Github,0
+Food,Confectionaries,Behance,3.5
+Hospitality,Event planning services,Reddit,3
+Entertainment,Sports,Snapchat,2.5
+News Media,Online media service,Twitter,4.5
+Energy,Solar services,Instagram,2.5
+Electronics,Semiconductor supplies,Linkedin,1
+Manufacturing,Food processing,Facebook,2
+Social science,Economics,Youtube,3.5
+Finance,Accounting services,Pinterest,2.5
+Trade,Local distribution,Tumblr,0
+Fashion,Luxury fashion services,Reddit,2.5
+Transportation,Delivery and Logistics,Medium,1
+Information Communication Technology,Network services,Spotify,0
+Artificial Intelligence,Virtual assistant,Behance,1.5
+Agriculture,Vertical farming,Github,0
+Construction,3D printing,Research-Gate,0
+Education,Secondary education,Tiktok,4.5
+Health,Hospital,Pinterest,2
+Food,Resturant,Tiktok,5
+Hospitality,Recreational services,Instagram,5
+Entertainment,Comedy,Youtube,5
+News Media,Radio broadcast,Facebook,3.5
+Energy,Renewable energy,Snapchat,1
+Electronics,Communication equipments,Linkedin,2.5
+Manufacturing,Metallurgical services,Tumblr,0
+Social science,Geography,Research-Gate,3
+Finance,Pension services,Medium,2.5
+Trade,Wholesale services,Spotify,0
+Fashion,Dress making services,behance,4.5
+Transportation,Speed boats Yachts Cruise Ships,Github,0
+Information Communication Technology,Social media services,Twitter,5
+Artificial Intelligence,Big data engineering,Reddit,5
+Agriculture,Fishing,Pinterest,0
+Construction,Carpentry,Twitter,2.5
+Education,Research,Instagram,1
+Health,Pharmacy,Linkedin,3
+Food,Beverages,Facebook,4.5
+Hospitality,Resorts,Snapchat,5
+Entertainment,Movies,Tiktok,4
+News Media,Newspaper,Tumblr,4
+Energy,Power utility services,Youtube,2.5
+Electronics,Industrial equipments,Medium,1.5
+Manufacturing,Research and development,Spotify,0
+Social science,Culture,Behance,4
+Finance,Insurance,Github,0
+Trade,Foreign distribution,Research-Gate,0
+Fashion,Fashion merchandising,Reddit,3

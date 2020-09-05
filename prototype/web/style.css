@@ -1,0 +1,359 @@
+body{
+	position: absolute;
+	font-family: 'Tenali Ramakrishna', sans-serif; 
+    top:0;
+    left:0;
+    z-index: -1;
+    height:auto;
+    width: 1000px;
+    background: url("src/slide2.jpg");
+    background-size: auto;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: initial;
+}
+.row{
+	margin: 2rem;
+	padding-left: 4rem;
+}
+.session-init{
+	width: 341px !important;
+	height: 670px !important;
+	border-radius: 30px;
+	background: #111111;
+	border: 5px solid black;
+}
+.session-result{
+	width: 341px !important;
+	height: 100%;
+	border-radius: 30px;
+	background: #DBC785;
+	border: 5px solid black;
+}
+.col-md-6{
+	/*padding: 10px 15px;*/
+	/*padding: 2rem;*/
+}
+.session-init .apt{
+	width: 272px;
+	height: 216px;
+	position: relative;
+	left: 43px;
+    top: 40px;
+}
+.session-init .apt img{
+	position: relative;
+	left: 100px;
+	width: 50px;
+	height: 41.21px;
+	margin-bottom: 2rem;
+}
+.session-init .apt h5{
+	font-weight: lighter;
+    font-size: 18px;
+    line-height: 25px;
+    letter-spacing: 0.1em;
+    width: 220px;
+    text-align: center;
+    color: #DBC7B5;
+    position: relative;
+    left: 6%;
+}
+.session-init .rec-form{
+	position: relative;
+	left: 20px;
+    width: 270px;
+    margin-top: 1.4rem;
+}
+.session-init .rec-form label{
+	font-weight: lighter;
+    font-size: 15px;
+    line-height: 25px;
+    letter-spacing: 0.1em;
+    width: 200px;
+    text-align: center;
+    color: #DBC7B5;
+    text-transform: uppercase;
+    padding: 0.75rem 0px;
+}
+.session-init .rec-form .name-input{
+	width: 250px;
+}
+.session-init .rec-form .name-input label{
+	position: relative;
+	left: 45px;
+}
+.session-init .rec-form .name-input input{
+	position: relative;
+	width: 100%;
+	left: 25px;
+	background: inherit;
+    border: none;
+    border-bottom: 1px solid #DBC785;
+    color: #DBC785;
+}
+.session-init .rec-form .name-input input:-internal-autofill-selected {
+    -webkit-appearance: menulist-button;
+    background-color: inherit !important;
+    border-bottom: 1px solid #DBC785;
+    color: #DBC785;
+}
+.session-init .rec-form .industry-input{
+	width: 250px;
+}
+.session-init .rec-form .industry-input label{
+	position: relative;
+	left: 47.5px;
+    margin-top: 0.5rem;
+    letter-spacing: 0.1em;
+}
+.session-init .rec-form .industry-input select{
+	position: relative;
+	width: 250px;
+    left: 25px;
+    border-radius: 30px;
+    height: 30px;
+    background-color: #DBC785;
+}
+.session-init .rec-form .service-input{
+	width: 150px;
+}
+
+.session-init .rec-form .industry-input select{
+	padding-left: 1rem;
+}
+
+.session-init .rec-form .industry-input select:focus{
+	height: 30%;
+}
+
+.session-init .rec-form .service-input select{
+	padding-left: 1rem;
+}
+
+.session-init .rec-form .service-input select:focus{
+	height: 30%;
+}
+
+
+.session-init .rec-form .service-input label{
+	position: relative;
+	margin-top: 0.5rem;
+	left: 45px;
+}
+.session-init .rec-form .service-input select{
+	position: relative;
+	left: 42.5px;
+	border-radius: 30px;
+    height: 30px;
+    background-color: #DBC785;
+}
+.session-init .rec-form input[type="button"]{
+	position: relative;
+	margin-top: 4rem;
+	background: inherit;
+	height: 38px;
+	width: 110px;
+	border: 1.5px solid #DBC7B5;
+	border-radius: 30px;
+	left: 90px;
+	color: #DBC785;
+}
+.session-init .rec-form input[type="button"]:hover{
+	background: #DBC785;
+	border: 1.5px solid #202020;
+	border-radius: 30px;
+	left: 90px;
+	color: #111111;
+	transition: 1s;
+}
+.session-result .header{
+	width: 320px;
+	position: relative;
+	height: 45%;
+	left: 10px;
+	padding-top: 1rem;
+}
+.session-result .header #company-name{
+	font-size: 24px;
+	font-weight: bold;
+	width: 100%;
+	height: auto;
+	text-transform: uppercase;
+	font-weight: lighter;
+	text-align: center;
+	position: relative;
+	margin-bottom: -0.75rem;
+}
+
+/*ICON-CARDS*/
+.res-cards{
+	width: 320px;
+	height: auto;
+	position: relative;
+	/*left: 7px;*/
+}
+.res-cards .row{
+	margin: 0px !important;
+	padding: 1rem;
+}
+
+.res-cards .col-md-4{
+	/*border: 1px solid red;*/
+	padding: 0px;
+	-webkit-animation: pulse 1s linear infinite;
+	animation: pulse 1s linear infinite; 
+}
+
+.res-cards .col-md-4 img{
+	position: relative;
+	top: 15px;
+    left: 12px;
+    width: 40px;
+    height: 45px;
+}
+.res-cards .col-md-4 .fix{
+	width: 75px;
+	height: 75px;
+	border-radius: 30px;
+	/*border: 1px solid blue;*/
+	padding: 0px 5px;
+	margin: 10px 0px;
+	position: relative;
+	left: 9.5px;
+}
+.behance{
+	background-color: #000000;
+}
+
+.facebook{background-color: #3B5998;}
+.github{background-color: #211F1F;}
+.instagram{
+	background-color: #111111;
+}
+.linkedin{background-color: #0E76A8;}
+.medium{background-color: #000000;}
+.pinterest{background-color: #BD081C;}
+.reddit{background-color: #FF4500;}
+.research-gate{background-color: #1BC38D;}
+.snapchat{background-color: #FFFC00;}
+.spotify{background-color: #1ED760;}
+.tiktok{background-color: #010101;}
+.tumblr{background-color: #34526F;}
+.twitter{background-color: #00ACEE;}
+.youtube{background-color: #FF0000;}
+
+.session-result .header .note-text{
+	position: relative;
+	width: 150px;
+	height: 25px;
+	text-align: center;
+	letter-spacing: 0.2em;
+	font-size: 15px;
+	line-height: 10px;
+	padding: 15px 0px;
+	text-transform: uppercase;
+	border-bottom: 1px solid #000000;
+	font-weight: bolder;
+	margin-bottom: 10px;
+	left: 84px;
+}
+
+.session-result .apt-inversed{
+	width: 272px;
+	height: 216px;
+	position: relative;
+	left: 43px;
+    top: 40px;
+    margin-top: 1.5rem;
+}
+
+.session-result .apt-inversed h5{
+	font-weight: 400;
+    font-size: 18px;
+    line-height: 25px;
+    letter-spacing: 0.1em;
+    width: 220px;
+    text-align: center;
+    color: #000000;
+    position: relative;
+    left: 6%;
+}
+.session-result .apt-inversed img{
+	position: relative;
+	left: 100px;
+	width: 50px;
+	height: 41.21px;
+	margin-top: 2rem;
+}
+footer{
+	color: #DBC785;
+}
+footer a{
+	color: #DBC785;
+}
+footer a:hover{
+	color: #DBC785;
+}
+
+@keyframes pulse {
+    0% {
+     transform: scale(1, 1);
+    }
+
+    50% {
+     transform: scale(1.1, 1.1);
+    }
+
+    100% {
+    transform: scale(1, 1);
+    }
+}
+
+
+
+.session-init .bezel_p, .session-result .bezel_p {
+	position: relative;
+	top: 0;
+	right: 11%;
+	-webkit-transform: translate(50%);
+	    -ms-transform: translate(50%);
+	        transform: translate(50%);
+}
+
+.bezel_p .square {
+	width: 75px;
+	height: 9.327px;
+	background-color: black;
+}
+
+.bezel_p .bezel {
+	width: 75px;
+	height: 16.282px;
+	background-color: black;
+	border-radius: 8px;
+	margin-top: -7px;
+	-webkit-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
+}
+
+.bezel .mouth_piece {
+	width: 35px;
+	height: 3.5px;
+	border-radius: 4px;
+	background-color: #202020;
+	margin-right: 3px;
+	position: relative;
+	top: 25%;
+}
+
+.bezel .camera {
+	height: 6px;
+	width: 6px;
+	background-color: #202020;
+	border-radius: 50%;
+	margin-left: 3px;
+	position: relative;
+	top: 15%;
+}
